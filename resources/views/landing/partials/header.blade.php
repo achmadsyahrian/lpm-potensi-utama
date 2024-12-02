@@ -24,17 +24,40 @@
 
                         <!-- Nav Start -->
                         <div class="classynav">
-                            <ul>
+                            <ul style="width: 100%;">
                                 <li><a href="{{route('landing.home')}}">Beranda</a></li>
-                                <li><a href="{{route('landing.profile')}}">Profile</a></li>
-                                <li><a href="{{route('landing.purpose')}}">Visi Misi</a></li>
+                                <li><a href="#">Profile</a>
+                                    <ul class="dropdown">
+                                        <li><a href="{{route('landing.profile')}}">Fungsi & Tugas</a></li>
+                                        <li><a href="{{route('landing.purpose')}}">Visi Misi</a></li>
+                                        <li><a href="{{route('landing.structure')}}">Struktur Organisasi</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{{route('landing.about')}}">Tentang SPMI</a></li>
+                                <li><a href="#">SPMI</a>
+                                    <ul class="dropdown">
+                                        <li><a href="{{route('landing.spmi.university')}}">Universitas</a></li>
+                                        <li><a href="#">Fakultas</a>
+                                            <ul class="dropdown" style="width: max-content;">
+                                                <li><a href="{{route('landing.spmi.academics.feb')}}">Fakultas Ekonomi & Bisnis</a></li>
+                                                <li><a href="{{route('landing.spmi.academics.fh')}}">Fakultas Hukum</a></li>
+                                                <li><a href="{{route('landing.spmi.academics.fisk')}}">Fakultas Ilmu Sosial & Kependidikan</a></li>
+                                                <li><a href="{{route('landing.spmi.academics.fpsi')}}">Fakultas Psikologi</a></li>
+                                                <li><a href="{{route('landing.spmi.academics.fsd')}}">Fakultas Seni & Desain</a></li>
+                                                <li><a href="{{route('landing.spmi.academics.ftik')}}">Fakultas Teknik & Ilmu Komputer</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
                                 <li><a href="#">Informasi</a>
                                     <ul class="dropdown">
                                         <li><a href="{{route('landing.news.index')}}">Berita</a></li>
                                         <li><a href="{{route('landing.announcement.index')}}">Pengumuman</a></li>
                                     </ul>
                                 </li>
-                                {{-- <li><a href="{{route('landing.administration.index')}}">Administrasi</a></li> --}}
+                                <li><a href="{{route('landing.policy')}}">Kebijakan</a></li>
+                                <li><a href="{{route('landing.accreditation')}}">Akreditasi</a></li>
+                                <li><a href="{{route('landing.report')}}">Laporan Monev</a></li>
                             </ul>
 
                             <!-- Header Add Area -->

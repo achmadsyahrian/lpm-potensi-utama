@@ -1,9 +1,9 @@
 @extends('landing.layouts.app')
 {{-- Head --}}
-@section('title', 'Profile Kami - ' . env('APP_NAME'))
+@section('title', 'Akreditasi - ' . env('APP_NAME'))
 @section('meta_description', env('APP_NAME') .' Universitas Potensi Utama berkomitmen untuk menciptakan lingkungan belajar yang inovatif dan mendukung pengembangan akademis dan profesional mahasiswa')
-@section('meta_keywords', 'profile lpm upu,  lpm potensi utama, profile  lpm, profile  lpm potensi utama')
-@section('canonical', env('APP_URL').'/profile')
+@section('meta_keywords', 'spmi akreditasi lpm upu,  lpm potensi utama, spmi akreditasi  lpm, spmi akreditasi  lpm potensi utama')
+@section('canonical', env('APP_URL').'/tentang-spmi')
 
 @section('content')
 
@@ -16,7 +16,7 @@
                 <div class="col-12 col-lg-8">
                     <!-- Post Content -->
                     <div class="post-content">
-                        <p class="tag"><span>Profile Kami</span></p>
+                        <p class="tag" style="background-color: #795548;"><span>Akreditasi</span></p>
                         <p class="post-title">{{env('APP_NAME')}}</p>
                         {{-- <div class="d-flex align-items-center">
                             <span class="post-date mr-30">June 20, 2018</span>
@@ -35,7 +35,7 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-8">
                     <div class="post-details-content mb-100">
-                        <h1 class="mb-30">Profile Kami</h1>
+                        <h1 class="mb-30">Akreditasi</h1>
                         <p>Coming soon..</p>
                     </div>
                 </div>

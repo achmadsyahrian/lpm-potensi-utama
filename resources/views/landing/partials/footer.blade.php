@@ -13,7 +13,7 @@
                         <ul>
                             <li><a href="{{route('landing.contact')}}">Kontak Kami</a></li>
                             <li><a href="{{route('landing.news.index')}}">Berita</a></li>
-                            <li><a href="{{route('landing.announcement.index')}}">Pengumuman</a></li>
+                            <li><a href="{{route('landing.policy')}}">Kebijakan</a></li>
                             {{-- <li><a href="{{route('landing.administration.index')}}">Administrasi</a></li> --}}
                         </ul>
                     </div>

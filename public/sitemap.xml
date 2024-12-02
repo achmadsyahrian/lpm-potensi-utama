@@ -1,43 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
-        <loc>http://lpm-potensi-utama.test</loc>
-        <lastmod>2024-11-23T06:43:37+00:00</lastmod>
+        <loc>https://lpm.potensi-utama.ac.id</loc>
+        <lastmod>2024-12-02T06:58:19+00:00</lastmod>
 
             </url>
     <url>
-        <loc>http://lpm-potensi-utama.test/profile</loc>
-        <lastmod>2024-11-23T06:43:37+00:00</lastmod>
+        <loc>https://lpm.potensi-utama.ac.id/fungsi-dan-tugas</loc>
+        <lastmod>2024-12-02T06:58:19+00:00</lastmod>
 
             </url>
     <url>
-        <loc>http://lpm-potensi-utama.test/visi-misi</loc>
-        <lastmod>2024-11-23T06:43:37+00:00</lastmod>
+        <loc>https://lpm.potensi-utama.ac.id/visi-misi</loc>
+        <lastmod>2024-12-02T06:58:19+00:00</lastmod>
 
             </url>
     <url>
-        <loc>http://lpm-potensi-utama.test/berita</loc>
-        <lastmod>2024-11-23T06:43:37+00:00</lastmod>
+        <loc>https://lpm.potensi-utama.ac.id/struktur-organisasi</loc>
+        <lastmod>2024-12-02T06:58:19+00:00</lastmod>
 
             </url>
     <url>
-        <loc>http://lpm-potensi-utama.test/pengumuman</loc>
-        <lastmod>2024-11-23T06:43:37+00:00</lastmod>
+        <loc>https://lpm.potensi-utama.ac.id/tentang-spmi</loc>
+        <lastmod>2024-12-02T06:58:19+00:00</lastmod>
 
             </url>
     <url>
-        <loc>http://lpm-potensi-utama.test/kontak</loc>
-        <lastmod>2024-11-23T06:43:37+00:00</lastmod>
+        <loc>https://lpm.potensi-utama.ac.id/spmi-universitas</loc>
+        <lastmod>2024-12-02T06:58:19+00:00</lastmod>
 
             </url>
     <url>
-        <loc>http://lpm-potensi-utama.test/berita/pelatihan-teknik-penulisan-cv-curicullum-vittae-dan-kiat-sukses-dalam-wawancara</loc>
-        <lastmod>2024-11-23T06:41:29+00:00</lastmod>
+        <loc>https://lpm.potensi-utama.ac.id/spmi-fakultas-ekonomi-bisnis</loc>
+        <lastmod>2024-12-02T06:58:19+00:00</lastmod>
 
             </url>
     <url>
-        <loc>http://lpm-potensi-utama.test/pengumuman/cassava-chip-kareasi-lutvi-jaga-kualitas-untuk-memberikan-yang-terbaik</loc>
-        <lastmod>2024-11-23T06:43:36+00:00</lastmod>
+        <loc>https://lpm.potensi-utama.ac.id/spmi-fakultas-hukum</loc>
+        <lastmod>2024-12-02T06:58:19+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>https://lpm.potensi-utama.ac.id/spmi-fakultas-ilmu-sosial-kependidikan</loc>
+        <lastmod>2024-12-02T06:58:19+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>https://lpm.potensi-utama.ac.id/spmi-fakultas-psikologi</loc>
+        <lastmod>2024-12-02T06:58:19+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>https://lpm.potensi-utama.ac.id/spmi-fakultas-seni-desain</loc>
+        <lastmod>2024-12-02T06:58:19+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>https://lpm.potensi-utama.ac.id/spmi-fakultas-teknik-ilmu-komputer</loc>
+        <lastmod>2024-12-02T06:58:19+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>https://lpm.potensi-utama.ac.id/kebijakan</loc>
+        <lastmod>2024-12-02T06:58:19+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>https://lpm.potensi-utama.ac.id/akreditasi</loc>
+        <lastmod>2024-12-02T06:58:19+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>https://lpm.potensi-utama.ac.id/laporan-monev</loc>
+        <lastmod>2024-12-02T06:58:19+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>https://lpm.potensi-utama.ac.id/berita</loc>
+        <lastmod>2024-12-02T06:58:19+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>https://lpm.potensi-utama.ac.id/pengumuman</loc>
+        <lastmod>2024-12-02T06:58:19+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>https://lpm.potensi-utama.ac.id/kontak</loc>
+        <lastmod>2024-12-02T06:58:19+00:00</lastmod>
 
             </url>
 </urlset>

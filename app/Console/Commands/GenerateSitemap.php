@@ -21,8 +21,8 @@ class GenerateSitemap extends Command
                 ->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY)
                 ->setPriority(1.0)
             )
-            // Profile
-            ->add(Url::create('/profile')
+            // Fungsi dan Tugas
+            ->add(Url::create('/fungsi-dan-tugas')
                 ->setLastModificationDate(now())
                 ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
                 ->setPriority(0.8)
@@ -31,7 +31,79 @@ class GenerateSitemap extends Command
             ->add(Url::create('/visi-misi')
                 ->setLastModificationDate(now())
                 ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.7)
+            )
+            // Struktur Organisasi
+            ->add(Url::create('/struktur-organisasi')
+                ->setLastModificationDate(now())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.7)
+            )
+            // tentang-spmi
+            ->add(Url::create('/tentang-spmi')
+                ->setLastModificationDate(now())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
                 ->setPriority(0.8)
+            )
+            // spmi-universitas
+            ->add(Url::create('/spmi-universitas')
+                ->setLastModificationDate(now())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.8)
+            )
+            // spmi-fakultas-ekonomi-bisnis
+            ->add(Url::create('/spmi-fakultas-ekonomi-bisnis')
+                ->setLastModificationDate(now())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.8)
+            )
+            // spmi-fakultas-hukum
+            ->add(Url::create('/spmi-fakultas-hukum')
+                ->setLastModificationDate(now())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.8)
+            )
+            // spmi-fakultas-ilmu-sosial-kependidikan
+            ->add(Url::create('/spmi-fakultas-ilmu-sosial-kependidikan')
+                ->setLastModificationDate(now())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.8)
+            )
+            // spmi-fakultas-psikologi
+            ->add(Url::create('/spmi-fakultas-psikologi')
+                ->setLastModificationDate(now())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.8)
+            )
+            // spmi-fakultas-seni-desain
+            ->add(Url::create('/spmi-fakultas-seni-desain')
+                ->setLastModificationDate(now())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.8)
+            )
+            // spmi-fakultas-teknik-ilmu-komputer
+            ->add(Url::create('/spmi-fakultas-teknik-ilmu-komputer')
+                ->setLastModificationDate(now())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.8)
+            )
+            // kebijakan
+            ->add(Url::create('/kebijakan')
+                ->setLastModificationDate(now())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.7)
+            )
+            // akreditasi
+            ->add(Url::create('/akreditasi')
+                ->setLastModificationDate(now())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.6)
+            )
+            // laporan-monev
+            ->add(Url::create('/laporan-monev')
+                ->setLastModificationDate(now())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.6)
             )
             // Berita
             ->add(Url::create('/berita')
@@ -56,12 +128,13 @@ class GenerateSitemap extends Command
         $posts = Post::all();
         
         foreach ($posts as $post) {
+            $priority = $post->created_at->gt(now()->subMonth()) ? 0.8 : 0.6;
+        
             $url = Url::create("/{$post->getTypeLabelSlug()}/{$post->slug}")
                 ->setLastModificationDate($post->updated_at)
                 ->setChangeFrequency(Url::CHANGE_FREQUENCY_WEEKLY)
-                ->setPriority(0.7);
-
-            // Add URLs based on the type of post
+                ->setPriority($priority);
+        
             if ($post->type == 'news') {
                 $sitemap->add($url->setUrl('/berita/' . $post->slug));
             } elseif ($post->type == 'announcement') {

@@ -23,10 +23,7 @@ Route::get('sitemap.xml', function () {
 Route::group(['namespace' => 'Landing', 'as' => 'landing.'], function() {
     Route::get('/', [HomeController::class, 'index'])->name('home');
 
-    // Tentang Upu
-        // Sejarah
-        // Route::view('/sejarah', 'landing.about.history')->name('history');
-
+    // Profile
         // Visi Misi
         Route::get('/visi-misi', function() {
             $latestPosts = Post::where('type', 'news')
@@ -35,34 +32,150 @@ Route::group(['namespace' => 'Landing', 'as' => 'landing.'], function() {
                 ->take(4)
                 ->get();
 
-            return view('landing.about.purpose', compact('latestPosts'));
+            return view('landing.profile.purpose', compact('latestPosts'));
         })->name('purpose');
 
-        Route::get('/profile', function() {
+        Route::get('/fungsi-dan-tugas', function() {
             $latestPosts = Post::where('type', 'news')
                 ->where('is_published', 1)
                 ->orderBy('created_at', 'desc')
                 ->take(4)
                 ->get();
 
-            return view('landing.about.profile', compact('latestPosts'));
+            return view('landing.profile.profile', compact('latestPosts'));
         })->name('profile');
 
-        // Program Studi
-            // Ekonomi Syariah
-            // Route::get('/program-studi/ekonomi-syariah', [AcademicController::class, 'economy'])->name('academic.economy');
-            // // Perbankan Syariah
-            // Route::get('/program-studi/perbankan-syariah', [AcademicController::class, 'banking'])->name('academic.banking');
-            // // Akuntansi
-            // Route::get('/program-studi/akuntansi', [AcademicController::class, 'accounting'])->name('academic.accounting');
-            // // Manajemen
-            // Route::get('/program-studi/manajemen', [AcademicController::class, 'management'])->name('academic.management');
+        Route::get('/struktur-organisasi', function() {
+            $latestPosts = Post::where('type', 'news')
+                ->where('is_published', 1)
+                ->orderBy('created_at', 'desc')
+                ->take(4)
+                ->get();
 
-        // Akreditasi
-        // Route::view('/akreditasi', 'landing.about.accreditation')->name('accreditation');
+            return view('landing.profile.structure', compact('latestPosts'));
+        })->name('structure');
 
-        // Fasilitas
-        // Route::view('/fasilitas', 'landing.about.facility')->name('facility');
+        Route::get('/tentang-spmi', function() {
+            $latestPosts = Post::where('type', 'news')
+                ->where('is_published', 1)
+                ->orderBy('created_at', 'desc')
+                ->take(4)
+                ->get();
+
+            return view('landing.about', compact('latestPosts'));
+        })->name('about');
+
+    // SPMI
+        // Univ
+        Route::get('/spmi-universitas', function() {
+            $latestPosts = Post::where('type', 'news')
+                ->where('is_published', 1)
+                ->orderBy('created_at', 'desc')
+                ->take(4)
+                ->get();
+
+            return view('landing.spmi.university', compact('latestPosts'));
+        })->name('spmi.university');
+
+        // Prodi
+            // FEB
+            Route::get('/spmi-fakultas-ekonomi-bisnis', function() {
+                $latestPosts = Post::where('type', 'news')
+                    ->where('is_published', 1)
+                    ->orderBy('created_at', 'desc')
+                    ->take(4)
+                    ->get();
+
+                return view('landing.spmi.academics.feb', compact('latestPosts'));
+            })->name('spmi.academics.feb');
+
+            // FH
+            Route::get('/spmi-fakultas-hukum', function() {
+                $latestPosts = Post::where('type', 'news')
+                    ->where('is_published', 1)
+                    ->orderBy('created_at', 'desc')
+                    ->take(4)
+                    ->get();
+
+                return view('landing.spmi.academics.fh', compact('latestPosts'));
+            })->name('spmi.academics.fh');
+
+            // FISK
+            Route::get('/spmi-fakultas-ilmu-sosial-kependidikan', function() {
+                $latestPosts = Post::where('type', 'news')
+                    ->where('is_published', 1)
+                    ->orderBy('created_at', 'desc')
+                    ->take(4)
+                    ->get();
+
+                return view('landing.spmi.academics.fisk', compact('latestPosts'));
+            })->name('spmi.academics.fisk');
+
+            // FPSI
+            Route::get('/spmi-fakultas-psikologi', function() {
+                $latestPosts = Post::where('type', 'news')
+                    ->where('is_published', 1)
+                    ->orderBy('created_at', 'desc')
+                    ->take(4)
+                    ->get();
+
+                return view('landing.spmi.academics.fpsi', compact('latestPosts'));
+            })->name('spmi.academics.fpsi');
+
+            // FSD
+            Route::get('/spmi-fakultas-seni-desain', function() {
+                $latestPosts = Post::where('type', 'news')
+                    ->where('is_published', 1)
+                    ->orderBy('created_at', 'desc')
+                    ->take(4)
+                    ->get();
+
+                return view('landing.spmi.academics.fsd', compact('latestPosts'));
+            })->name('spmi.academics.fsd');
+            
+            // FTIK
+            Route::get('/spmi-fakultas-teknik-ilmu-komputer', function() {
+                $latestPosts = Post::where('type', 'news')
+                    ->where('is_published', 1)
+                    ->orderBy('created_at', 'desc')
+                    ->take(4)
+                    ->get();
+
+                return view('landing.spmi.academics.ftik', compact('latestPosts'));
+            })->name('spmi.academics.ftik');
+        
+    // Kebijakan
+    Route::get('/kebijakan', function() {
+        $latestPosts = Post::where('type', 'news')
+            ->where('is_published', 1)
+            ->orderBy('created_at', 'desc')
+            ->take(4)
+            ->get();
+
+        return view('landing.policy', compact('latestPosts'));
+    })->name('policy');
+
+    // Akreditasi
+    Route::get('/akreditasi', function() {
+        $latestPosts = Post::where('type', 'news')
+            ->where('is_published', 1)
+            ->orderBy('created_at', 'desc')
+            ->take(4)
+            ->get();
+
+        return view('landing.accreditation', compact('latestPosts'));
+    })->name('accreditation');
+
+    // Laporan Monev
+    Route::get('/laporan-monev', function() {
+        $latestPosts = Post::where('type', 'news')
+            ->where('is_published', 1)
+            ->orderBy('created_at', 'desc')
+            ->take(4)
+            ->get();
+
+        return view('landing.report', compact('latestPosts'));
+    })->name('report');
 
     // Informasi
         // Berita
@@ -77,33 +190,7 @@ Route::group(['namespace' => 'Landing', 'as' => 'landing.'], function() {
         Route::get('/pengumuman/tag/{tagSlug}', [AnnouncementController::class, 'byTag'])->name('announcement.tag');
         Route::get('/pengumuman/{slug}', [AnnouncementController::class, 'show'])->name('announcement.show');
 
-    // Akademik
-        // Pengabdian Masyarakat
-        // Route::get('/pengabdian-masyarakat', [CommunityController::class, 'index'])->name('community.index');
-        // Route::get('/pengabdian-masyarakat/{slug}', [CommunityController::class, 'show'])->name('community.show');
 
-        // Penelitian
-        // Route::get('/penelitian', function(){
-        //     $latestPosts = Post::where('type', 'news')
-        //         ->where('is_published', 1)
-        //         ->orderBy('created_at', 'desc')
-        //         ->take(4)
-        //         ->get();
-
-        //     $data = Research::find(1);
-        //     return view('landing.research.index', compact('data', 'latestPosts'));
-        // })->name('research.index');
-
-        // // Administrasi
-        // Route::get('/administrasi', function(){
-        //     $latestPosts = Post::where('type', 'news')
-        //         ->where('is_published', 1)
-        //         ->orderBy('created_at', 'desc')
-        //         ->take(4)
-        //         ->get();
-
-        //     return view('landing.administration', compact('latestPosts'));
-        // })->name('administration.index');
 
         // Kontak Kami
         Route::get('/kontak', function(){
