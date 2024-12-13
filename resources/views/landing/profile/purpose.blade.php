@@ -36,7 +36,41 @@
                 <div class="col-12 col-lg-8">
                     <div class="post-details-content mb-100">
                         <h1 class="mb-30">Visi & Misi</h1>
-                        <p>Coming soon..</p>
+                        <h4 class="mb-30">Visi</h4>
+                        <p>"Menjadi Unit kerja yang menjamin dan meningkatkan mutu akademik secara berkelanjutan"</p>
+
+                        <h4 class="mb-30">Misi</h4>
+                        <table class="text-secondary mb-30" style="border-collapse: collapse; width: 100%;">
+                            <tr>
+                                <td style="width: 3%; vertical-align: top;">1.</td>
+                                <td>Menjamin pelaksanaan SPMI diseluruh fakultas dan prodi.</td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;">2.</td>
+                                <td>Menyelenggarakan tridharma perguruan tinggi yang bermutu.</td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;">3.</td>
+                                <td>Melaksanakan pelatihan dan pengembangan SPMI secara berkelanjutan.</td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;">4.</td>
+                                <td>Menyusun, mengimplementasikan, dan melakukan perbaikan berkelanjutan terhadap sistem penjaminan mutu internal.</td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;">5.</td>
+                                <td>Mendorong terbentuknya lingkungan UPU yang memiliki budaya mengutamakan mutu.</td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;">6.</td>
+                                <td>Membimbing dan memfasilitasi Fakultas/Sekolah dan Program Studi dalam mempersiapkan, melaksanakan proses dan meraih pengakuan dari lembaga akreditasi nasional dan internasional.</td>
+                            </tr>
+                        </table>
+
+                        <h4 class="mb-30">Tujuan</h4>
+                        <p>
+                            Memberikan layanan terbaik untuk kepuasan sivitas akademika dan pemangku kepentingan melalui peningkatan kefektifan sistem manejemen mutu secara berkelanjutan dalam bidang SPMI
+                        </p>
                     </div>
                 </div>
 

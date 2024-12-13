@@ -22,11 +22,11 @@ class GenerateSitemap extends Command
                 ->setPriority(1.0)
             )
             // Fungsi dan Tugas
-            ->add(Url::create('/fungsi-dan-tugas')
-                ->setLastModificationDate(now())
-                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
-                ->setPriority(0.8)
-            )
+            // ->add(Url::create('/fungsi-dan-tugas')
+            //     ->setLastModificationDate(now())
+            //     ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+            //     ->setPriority(0.8)
+            // )
             // Visi Misi
             ->add(Url::create('/visi-misi')
                 ->setLastModificationDate(now())

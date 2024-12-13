@@ -35,15 +35,15 @@ Route::group(['namespace' => 'Landing', 'as' => 'landing.'], function() {
             return view('landing.profile.purpose', compact('latestPosts'));
         })->name('purpose');
 
-        Route::get('/fungsi-dan-tugas', function() {
-            $latestPosts = Post::where('type', 'news')
-                ->where('is_published', 1)
-                ->orderBy('created_at', 'desc')
-                ->take(4)
-                ->get();
+        // Route::get('/fungsi-dan-tugas', function() {
+        //     $latestPosts = Post::where('type', 'news')
+        //         ->where('is_published', 1)
+        //         ->orderBy('created_at', 'desc')
+        //         ->take(4)
+        //         ->get();
 
-            return view('landing.profile.profile', compact('latestPosts'));
-        })->name('profile');
+        //     return view('landing.profile.profile', compact('latestPosts'));
+        // })->name('profile');
 
         Route::get('/struktur-organisasi', function() {
             $latestPosts = Post::where('type', 'news')
@@ -55,7 +55,7 @@ Route::group(['namespace' => 'Landing', 'as' => 'landing.'], function() {
             return view('landing.profile.structure', compact('latestPosts'));
         })->name('structure');
 
-        Route::get('/tentang-spmi', function() {
+        Route::get('/tentang-lpm', function() {
             $latestPosts = Post::where('type', 'news')
                 ->where('is_published', 1)
                 ->orderBy('created_at', 'desc')

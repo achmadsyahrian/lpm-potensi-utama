@@ -28,12 +28,12 @@
                                 <li><a href="{{route('landing.home')}}">Beranda</a></li>
                                 <li><a href="#">Profile</a>
                                     <ul class="dropdown">
-                                        <li><a href="{{route('landing.profile')}}">Fungsi & Tugas</a></li>
+                                        {{-- <li><a href="{{route('landing.profile')}}">Fungsi & Tugas</a></li> --}}
+                                        <li><a href="{{route('landing.about')}}">Tentang LPM</a></li>
                                         <li><a href="{{route('landing.purpose')}}">Visi Misi</a></li>
                                         <li><a href="{{route('landing.structure')}}">Struktur Organisasi</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="{{route('landing.about')}}">Tentang SPMI</a></li>
                                 <li><a href="#">SPMI</a>
                                     <ul class="dropdown">
                                         <li><a href="{{route('landing.spmi.university')}}">Universitas</a></li>
